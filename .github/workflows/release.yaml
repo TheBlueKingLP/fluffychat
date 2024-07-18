@@ -33,7 +33,7 @@ jobs:
           rm -rf fonts/NotoEmoji
           yq -i 'del( .flutter.fonts[] | select(.family == "NotoEmoji") )' pubspec.yaml
       - run: flutter pub get
-      - run: flutter build apk --release
+      - run: flutter build apk --debug
       - name: Upload to release
         uses: actions/upload-release-asset@v1
         env:
