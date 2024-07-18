@@ -92,7 +92,7 @@ jobs:
           FDROID_KEY_PASS: ${{ secrets.FDROID_KEY_PASS }}
           PLAYSTORE_DEPLOY_KEY: ${{ secrets.PLAYSTORE_DEPLOY_KEY }}
         run: ./scripts/prepare-android-release.sh
-      - run: flutter build apk --release
+      - run: flutter build apk --release --stacktrace
       - name: Upload to release
         uses: actions/upload-release-asset@v1
         env:
