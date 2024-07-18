@@ -786,7 +786,7 @@ packages:
       sha256: fd5f115a08dcdc00b988bea3003c956f1b60a78a61d899cbddfb44f5d0e44d4a
       url: "https://pub.dev"
     source: hosted
-    version: "0.10.8"
+    version: "0.11.3"
   frontend_server_client:
     dependency: transitive
     description:
